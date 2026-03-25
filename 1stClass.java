@@ -13,30 +13,30 @@ class FirstClass {
     System.out.println("****");
     System.out.println("*****");
     System.out.println();//sout and tab easy way to write full line
-
+    
     //Variables
-
+    
     String name = "Sifat Ullah";
     int A = 34;
     int B = 56;
     float sum = A + B;
     //System.out.println(sum);
     double price = 34.56;
-
+    
     B = 25;
     name = "Nadia";
     System.out.println(name);
-
+    
     //Input
-
+    
     Scanner sc = new Scanner(System.in);
     String nam = sc.nextLine();
     System.out.println(nam);
     //nextInt()
     //nextFloat()
-
+    
     int a, b, plus;
-
+    
     System.out.println("Enter Two numbers: ");
     a = sc.nextInt();
     b = sc.nextInt();
@@ -45,7 +45,7 @@ class FirstClass {
 
     //Lecture 3 {If,else, else if, switch, break}
     Scanner sc = new Scanner(System.in);
-  
+
     /*int age = sc.nextInt();
     
     if (age > 18) {
@@ -67,13 +67,13 @@ class FirstClass {
     } else {
       System.out.println("B is greater than Age");
     }*/
-  
+
     //int button = sc.nextInt();
 
     /*if (button == 1) {
       System.out.println("Hello");
     }else if(button==2){System.out.println("Namaste");
-
+    
     }else if(button==3){
       System.out.println("Bonjur");
     }else{System.out.println("Invalid");}*/
@@ -90,88 +90,121 @@ class FirstClass {
         break;
       default:
         System.out.println("Invalid");*/
-      
 
-        // Practice 2
+    // Practice 2
 
-        /*int number = sc.nextInt();
+    /*int number = sc.nextInt();
+    
+    switch (number) {
+      case 1:
+        System.out.println("January");
+        break;
+      case 2:
+        System.out.println("February");
+        break;
+      case 3:
+        System.out.println("March");
+        break;
+      case 4:
+        System.out.println("April");
+        break;
+      case 5:
+        System.out.println("May");
+        break;
+      case 6:
+        System.out.println("June");
+        break;
+      case 7:
+        System.out.println("July");
+        break;
+      case 8:
+        System.out.println("Augast");
+        break;
+      case 9:
+        System.out.println("September");
+        break;
+      case 10:
+        System.out.println("October");
+        break;
+      case 11:
+        System.out.println("November");
+        break;
+      case 12:
+        System.out.println("December");
+        break;
+      default:
+          System.out.println("Invalid Input");
+    }*/
 
-        switch (number) {
-          case 1:
-            System.out.println("January");
-            break;
-          case 2:
-            System.out.println("February");
-            break;
-          case 3:
-            System.out.println("March");
-            break;
-          case 4:
-            System.out.println("April");
-            break;
-          case 5:
-            System.out.println("May");
-            break;
-          case 6:
-            System.out.println("June");
-            break;
-          case 7:
-            System.out.println("July");
-            break;
-          case 8:
-            System.out.println("Augast");
-            break;
-          case 9:
-            System.out.println("September");
-            break;
-          case 10:
-            System.out.println("October");
-            break;
-          case 11:
-            System.out.println("November");
-            break;
-          case 12:
-            System.out.println("December");
-            break;
-          default:
-              System.out.println("Invalid Input");
-        }*/
+    //Practice 1
+    /* 
+    System.out.println("Enter two numbers");
+    float a = sc.nextFloat();
+    float b = sc.nextFloat();
+    
+    System.out.println(
+        "Input what you want to do \n1. Addition\n2. Subtruction\n3. Multiplication\n4. Devision\n5. Mudulo or reminder");
+    int num = sc.nextInt();
+    
+    if (num == 1) {
+      float sum = a + b;
+      System.out.print("Addition is ");System.out.println(sum);
+    } else if (num == 2) {
+      float sum = a - b;
+      System.out.print("Subtruction is ");
+      System.out.println(sum);
+    
+    }else if(num==3) {float sum = a * b;
+      System.out.print("Multiplication is ");
+      System.out.println(sum);}else if (num==4){float sum = a / b;
+      System.out.print("Division is ");
+      System.out.println(sum);
+    } else if (num == 5) {
+        float sum = a % b;
+      System.out.print("Mudulo or Reminder is ");
+      System.out.println(sum);
+      }
+    */
 
-        //Practice 1
+    //Lecture 4 {for loop , while loop, do while loop}
 
-        System.out.println("Enter two numbers");
-        float a = sc.nextFloat();
-        float b = sc.nextFloat();
+  //   for (int i = 0;i<4; i++) {
+  //   System.out.println("Sifat");
+  // }
+  // for (int i = 0;i<=10; i++) {
+  //   System.out.print(i+" ");
+  // }
+  
+  // int i = 0;
+  // while (i <=10) {
+  //   System.out.println(i);
+  //   i++;
 
-        System.out.println(
-            "Input what you want to do \n1. Addition\n2. Subtruction\n3. Multiplication\n4. Devision\n5. Mudulo or reminder");
-        int num = sc.nextInt();
+  // }
+  // do {
+  //   System.out.println(i);
+  //   i++;
 
-        if (num == 1) {
-          float sum = a + b;
-          System.out.print("Addition is ");System.out.println(sum);
-        } else if (num == 2) {
-          float sum = a - b;
-          System.out.print("Subtruction is ");
-          System.out.println(sum);
-
-        }else if(num==3) {float sum = a * b;
-          System.out.print("Multiplication is ");
-          System.out.println(sum);}else if (num==4){float sum = a / b;
-          System.out.print("Division is ");
-          System.out.println(sum);
-        } else if (num == 5) {
-            float sum = a % b;
-          System.out.print("Mudulo or Reminder is ");
-          System.out.println(sum);
-          }
+  // } while (i < 20);
 
 
 
+  //Class practice
+
+  // int a = sc.nextInt();
+  // int sum = 0;
+  // for (int i = 1; i <= a;i++){
+  //    sum = i + sum;
+  // }
+  // System.out.println(sum);
+
+  int n = sc.nextInt();
+  for (int i = 1; i <= 10; i++) {
+    System.out.println(n+"x"+i+"="+(n*i));
+  }
 
 
-
-
-}
+  
+  }
 
   }
